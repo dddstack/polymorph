@@ -1,6 +1,6 @@
 {
   "name": "@dddstack/polymorph-react",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "@dddstack/polymorph-react.",
   "keywords": [],
   "homepage": "https://github.com/dddstack/polymorph",
@@ -28,7 +28,7 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@dddstack/polymorph-generics": "0.0.0"
+    "@dddstack/polymorph-generics": "0.0.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
