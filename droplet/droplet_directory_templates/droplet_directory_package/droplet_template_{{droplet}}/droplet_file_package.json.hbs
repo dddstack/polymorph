@@ -1,0 +1,39 @@
+{
+  "name": "{{droplet}}",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "",
+  "bugs": {
+    "url": ""
+  },
+  "repository": {
+    "type": "",
+    "url": "",
+    "directory": "packages/{{droplet}}"
+  },
+  "license": "",
+  "author": "",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch",
+    "test": "vitest run",
+    "test:typecheck": "tsc --noEmit",
+    "test:watch": "vitest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4",
+    "vitest": "^0.30.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
