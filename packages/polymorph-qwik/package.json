@@ -1,0 +1,48 @@
+{
+  "name": "@dddstack/polymorph-qwik",
+  "version": "0.0.0",
+  "description": "@dddstack/polymorph-qwik.",
+  "keywords": [],
+  "homepage": "https://github.com/dddstack/polymorph",
+  "bugs": {
+    "url": "https://github.com/dddstack/polymorph"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dddstack/polymorph",
+    "directory": "packages/polymorph-qwik"
+  },
+  "license": "MIT",
+  "author": "ddddurk <ddddurk@proton.me>",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch",
+    "test": "vitest run",
+    "test:typecheck": "tsc --noEmit",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@dddstack/polymorph-generics": "0.0.0"
+  },
+  "devDependencies": {
+    "@builder.io/qwik": "^0.101.0",
+    "@types/react": "^18.0.35",
+    "jsdom": "^21.1.1",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4",
+    "undici": "^5.21.2",
+    "vitest": "^0.30.0"
+  },
+  "peerDependencies": {
+    "@builder.io/qwik": "^0.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
