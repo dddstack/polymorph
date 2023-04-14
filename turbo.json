@@ -10,15 +10,15 @@
       "dependsOn": ["^build:watch"]
     },
     "test": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["build", "^build"]
     },
     "test:typecheck": {
       "cache": false,
-      "dependsOn": ["^build"]
+      "dependsOn": ["build", "^build"]
     },
     "test:watch": {
       "cache": false,
-      "dependsOn": ["^build"]
+      "dependsOn": ["build", "^build"]
     }
   }
 }
