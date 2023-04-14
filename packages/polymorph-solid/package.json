@@ -1,0 +1,49 @@
+{
+  "name": "@dddstack/polymorph-solid",
+  "version": "0.0.0",
+  "description": "@dddstack/polymorph-solid.",
+  "keywords": [],
+  "homepage": "https://github.com/dddstack/polymorph",
+  "bugs": {
+    "url": "https://github.com/dddstack/polymorph"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dddstack/polymorph",
+    "directory": "packages/polymorph-solid"
+  },
+  "license": "MIT",
+  "author": "ddddurk <ddddurk@proton.me>",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch",
+    "test": "vitest run",
+    "test:typecheck": "tsc --noEmit",
+    "test:watch": "vitest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@solidjs/testing-library": "^0.7.0",
+    "@testing-library/dom": "^9.2.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "esbuild-plugin-solid": "^0.5.0",
+    "jsdom": "^21.1.1",
+    "solid-js": "^1.7.3",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4",
+    "vite-plugin-solid": "^2.7.0",
+    "vitest": "^0.30.0"
+  },
+  "peerDependencies": {
+    "solid-js": ">=1.6"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
