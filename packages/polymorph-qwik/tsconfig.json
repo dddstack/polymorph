@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "@builder.io/qwik",
+    "lib": ["DOM"],
+    "types": ["vitest/globals"]
+  },
+  "include": ["src", "tests"]
+}

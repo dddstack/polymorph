@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "lib": ["DOM"],
+    "types": ["vitest/globals"]
+  },
+  "include": ["src", "tests"]
+}
