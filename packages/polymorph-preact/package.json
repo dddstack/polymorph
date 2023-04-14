@@ -1,0 +1,49 @@
+{
+  "name": "@dddstack/polymorph-preact",
+  "version": "0.0.0",
+  "description": "@dddstack/polymorph-preact.",
+  "keywords": [],
+  "homepage": "https://github.com/dddstack/polymorph",
+  "bugs": {
+    "url": "https://github.com/dddstack/polymorph"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dddstack/polymorph",
+    "directory": "packages/polymorph-preact"
+  },
+  "license": "MIT",
+  "author": "ddddurk <ddddurk@proton.me>",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch",
+    "test": "vitest run",
+    "test:typecheck": "tsc --noEmit",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@dddstack/polymorph-generics": "0.0.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.5.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/preact": "^3.2.3",
+    "jsdom": "^21.1.1",
+    "preact": "^10.13.2",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4",
+    "vitest": "^0.30.0"
+  },
+  "peerDependencies": {
+    "preact": ">=10"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
