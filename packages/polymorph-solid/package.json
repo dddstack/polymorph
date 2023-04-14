@@ -27,7 +27,9 @@
     "test:typecheck": "tsc --noEmit",
     "test:watch": "vitest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@dddstack/polymorph-generics": "0.0.0"
+  },
   "devDependencies": {
     "@solidjs/testing-library": "^0.7.0",
     "@testing-library/dom": "^9.2.0",
