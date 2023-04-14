@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "lib": ["DOM"],
+    "jsx": "react-jsx",
+    "types": ["vitest/globals"]
+  },
+  "include": ["src", "tests"]
+}
