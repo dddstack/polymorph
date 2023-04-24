@@ -9,8 +9,7 @@ const config = defineConfig({
   test: {
     environment: "jsdom",
     globals: true,
-    passWithNoTests: true,
-    setupFiles: ["../../node_modules/@testing-library/jest-dom"]
+    passWithNoTests: true
   }
 });
 

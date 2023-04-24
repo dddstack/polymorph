@@ -14,4 +14,4 @@ pnpm i @dddstack/polymorph-preact
 
 ## Documentation
 
-For comprehensive documentation, view [`@dddstack/polymorph`](https://github.com/dddstack/polymorph).
+For comprehensive documentation, see [@dddstack/polymorph](https://github.com/dddstack/polymorph).

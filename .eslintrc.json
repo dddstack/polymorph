@@ -10,7 +10,6 @@
   ],
   "rules": {
     "@typescript-eslint/consistent-type-imports": "error",
-    "@typescript-eslint/indent": ["error", 2],
     "simple-import-sort/imports": "error",
     "unused-imports/no-unused-imports": "error"
   }

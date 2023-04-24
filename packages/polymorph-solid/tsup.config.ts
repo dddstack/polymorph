@@ -9,7 +9,8 @@ const config = defineConfig({
   format: ["esm"],
   minify: true,
   sourcemap: true,
-  treeshake: true
+  treeshake: true,
+  tsconfig: "./tsconfig.build.json"
 });
 
 export default config;
