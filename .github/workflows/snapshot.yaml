@@ -18,13 +18,16 @@ jobs:
         with:
           node-version: 16.x
 
+      - run: npm i -g pnpm
+        shell: bash
+
       - run: echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}" >> .npmrc
         shell: bash
 
-      - run: yarn --frozen-lockfile
+      - run: pnpm i
         shell: bash
 
       - run: |
-          yarn ci:version:snapshot
-          yarn ci:publish:snapshot
+          pnpm ci:version:snapshot
+          pnpm ci:publish:snapshot
         shell: bash

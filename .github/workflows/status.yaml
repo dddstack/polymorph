@@ -20,10 +20,13 @@ jobs:
         with:
           node-version: 16.x
 
-      - run: yarn --frozen-lockfile
+      - run: npm i -g pnpm
         shell: bash
 
-      - run: yarn build
+      - run: pnpm i
+        shell: bash
+
+      - run: pnpm build
         shell: bash
 
   lint:
@@ -40,10 +43,13 @@ jobs:
         with:
           node-version: 16.x
 
-      - run: yarn --frozen-lockfile
+      - run: npm i -g pnpm
         shell: bash
 
-      - run: yarn chore:lint
+      - run: pnpm i
+        shell: bash
+
+      - run: pnpm chore:lint
         shell: bash
 
   test:
@@ -60,10 +66,13 @@ jobs:
         with:
           node-version: 16.x
 
-      - run: yarn --frozen-lockfile
+      - run: npm i -g pnpm
         shell: bash
 
-      - run: yarn test
+      - run: pnpm i
+        shell: bash
+
+      - run: pnpm test
         shell: bash
 
   typecheck:
@@ -80,8 +89,11 @@ jobs:
         with:
           node-version: 16.x
 
-      - run: yarn --frozen-lockfile
+      - run: npm i -g pnpm
         shell: bash
 
-      - run: yarn test:typecheck
+      - run: pnpm i
+        shell: bash
+
+      - run: pnpm test:typecheck
         shell: bash

@@ -24,7 +24,3 @@
 <div align="center">
   <img alt="License" src="https://img.shields.io/github/license/dddstack/polymorph?style=for-the-badge">
 </div>
-
-## Documentation
-
-For comprehensive documentation, view the [polymorph website](https://github.com/dddstack/polymorph/tree/main/packages/polymorph).
