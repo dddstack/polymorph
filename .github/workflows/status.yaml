@@ -20,10 +20,11 @@ jobs:
         with:
           node-version: 16.x
 
-      - run: npm i -g pnpm
-        shell: bash
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
 
-      - run: pnpm i
+      - run: pnpm i --frozen-lockfile=false
         shell: bash
 
       - run: pnpm build
@@ -43,10 +44,11 @@ jobs:
         with:
           node-version: 16.x
 
-      - run: npm i -g pnpm
-        shell: bash
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
 
-      - run: pnpm i
+      - run: pnpm i --frozen-lockfile=false
         shell: bash
 
       - run: pnpm chore:lint
@@ -66,10 +68,11 @@ jobs:
         with:
           node-version: 16.x
 
-      - run: npm i -g pnpm
-        shell: bash
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
 
-      - run: pnpm i
+      - run: pnpm i --frozen-lockfile=false
         shell: bash
 
       - run: pnpm test
@@ -89,10 +92,11 @@ jobs:
         with:
           node-version: 16.x
 
-      - run: npm i -g pnpm
-        shell: bash
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
 
-      - run: pnpm i
+      - run: pnpm i --frozen-lockfile=false
         shell: bash
 
       - run: pnpm test:typecheck
