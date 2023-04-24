@@ -8,4 +8,3 @@
 
 - Configure separate `tsconfig.build.json`
 - Migrate to `pnpm`
- 

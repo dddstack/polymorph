@@ -20,7 +20,10 @@ jobs:
         with:
           node-version: 16.x
 
-      - run: pnpm
+      - run: npm i -g pnpm
+        shell: bash
+
+      - run: pnpm i
         shell: bash
 
       - run: pnpm build
@@ -39,6 +42,9 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: 16.x
+
+      - run: npm i -g pnpm
+        shell: bash
 
       - run: pnpm i
         shell: bash
@@ -60,6 +66,9 @@ jobs:
         with:
           node-version: 16.x
 
+      - run: npm i -g pnpm
+        shell: bash
+
       - run: pnpm i
         shell: bash
 
@@ -79,6 +88,9 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: 16.x
+
+      - run: npm i -g pnpm
+        shell: bash
 
       - run: pnpm i
         shell: bash

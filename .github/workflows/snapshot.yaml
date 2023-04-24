@@ -18,6 +18,9 @@ jobs:
         with:
           node-version: 16.x
 
+      - run: npm i -g pnpm
+        shell: bash
+
       - run: echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}" >> .npmrc
         shell: bash
 
