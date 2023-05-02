@@ -22,27 +22,37 @@ export type Component<
 };
 
 export const mechanic =
-  <AsType extends As, TransformerPropsType extends TransformerProps>(
+  <
+    AsType extends As,
+    TransformerPropsType extends TransformerProps
+  >(
     asType: AsType,
     transformer: Transformer<TransformerPropsType>
   ) =>
   ({ as, children, ...rest }: ComponentProps<AsType> & any) =>
     createElement(as ?? asType, transformer(rest), children);
 
-export const defaultTransformer = (props: TransformerProps) => props;
+export const defaultTransformer = (props: TransformerProps) =>
+  props;
 
-export const polymorph = <TransformerPropsType extends TransformerProps>(
+export const polymorph = <
+  TransformerPropsType extends TransformerProps
+>(
   transformer: Transformer<TransformerPropsType> = defaultTransformer
 ) => {
   const cache = new Map<As, any>();
 
   return new Proxy(mechanic, {
-    apply: (_, __, argArray: [As]) => mechanic(...argArray, transformer),
+    apply: (_, __, argArray: [As]) =>
+      mechanic(...argArray, transformer),
     get: (_, DOMElement: As) => {
       if (!cache.get(DOMElement))
         cache.set(DOMElement, mechanic(DOMElement, transformer));
 
       return cache.get(DOMElement);
     }
-  }) as Polymorph<As, { [AsType in As]: Component<As, TransformerPropsType> }>;
+  }) as Polymorph<
+    As,
+    { [AsType in As]: Component<As, TransformerPropsType> }
+  >;
 };

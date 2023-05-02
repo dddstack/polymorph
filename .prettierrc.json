@@ -3,7 +3,7 @@
   "bracketSpacing": true,
   "endOfLine": "auto",
   "plugins": ["prettier-plugin-packagejson"],
-  "printWidth": 80,
+  "printWidth": 65,
   "semi": true,
   "singleQuote": false,
   "tabWidth": 2,

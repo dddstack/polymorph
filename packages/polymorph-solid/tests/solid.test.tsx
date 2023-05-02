@@ -67,7 +67,9 @@ describe("solid", () => {
 
     it("should forward refs with the as prop", () => {
       let ref: (HTMLDivElement & HTMLSpanElement) | undefined;
-      render(() => <p.div as="span" ref={ref} data-testid="p" />);
+      render(() => (
+        <p.div as="span" ref={ref} data-testid="p" />
+      ));
       expect(ref).toBeInstanceOf(HTMLSpanElement);
     });
   });

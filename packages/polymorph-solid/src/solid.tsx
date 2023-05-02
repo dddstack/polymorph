@@ -4,7 +4,10 @@ import type {
   TransformerProps,
   WithAs
 } from "@dddstack/polymorph-generics";
-import type { ComponentProps as SolidComponentProps, JSX } from "solid-js";
+import type {
+  ComponentProps as SolidComponentProps,
+  JSX
+} from "solid-js";
 import { splitProps } from "solid-js";
 import { Dynamic } from "solid-js/web";
 
@@ -23,30 +26,45 @@ export type Component<
 };
 
 export const mechanic =
-  <AsType extends As, TransformerPropsType extends TransformerProps>(
+  <
+    AsType extends As,
+    TransformerPropsType extends TransformerProps
+  >(
     asType: AsType,
     transformer: Transformer<TransformerPropsType>
   ) =>
   (props: ComponentProps<AsType> & any) => {
     const [local, others] = splitProps(props, ["as"]);
 
-    return <Dynamic component={local.as ?? asType} {...transformer(others)} />;
+    return (
+      <Dynamic
+        component={local.as ?? asType}
+        {...transformer(others)}
+      />
+    );
   };
 
-export const defaultTransformer = (props: TransformerProps) => props;
+export const defaultTransformer = (props: TransformerProps) =>
+  props;
 
-export const polymorph = <TransformerPropsType extends TransformerProps>(
+export const polymorph = <
+  TransformerPropsType extends TransformerProps
+>(
   transformer: Transformer<TransformerPropsType> = defaultTransformer
 ) => {
   const cache = new Map<As, any>();
 
   return new Proxy(mechanic, {
-    apply: (_, __, argArray: [As]) => mechanic(...argArray, transformer),
+    apply: (_, __, argArray: [As]) =>
+      mechanic(...argArray, transformer),
     get: (_, DOMElement: As) => {
       if (!cache.get(DOMElement))
         cache.set(DOMElement, mechanic(DOMElement, transformer));
 
       return cache.get(DOMElement);
     }
-  }) as Polymorph<As, { [AsType in As]: Component<As, TransformerPropsType> }>;
+  }) as Polymorph<
+    As,
+    { [AsType in As]: Component<As, TransformerPropsType> }
+  >;
 };
