@@ -1,5 +1,21 @@
 # @dddstack/polymorph-preact
 
+## 1.0.0
+
+### Major Changes
+
+- c5c9bf7: Publish 1.0.0
+
+  - `preact`
+  - `qwik`
+  - `react`
+  - `solid`
+
+### Patch Changes
+
+- Updated dependencies [c5c9bf7]
+  - @dddstack/polymorph-generics@1.0.0
+
 ## 0.1.0
 
 ### Minor Changes
