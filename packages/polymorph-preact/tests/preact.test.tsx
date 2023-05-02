@@ -1,11 +1,11 @@
 import { render, screen } from "@testing-library/preact";
 import { createRef } from "preact";
 
-import { polymorphic } from "../dist";
+import { polymorph } from "../dist";
 
 describe("preact", () => {
   describe("with default transformer", () => {
-    const p = polymorphic();
+    const p = polymorph();
 
     it("should render an element using proxy apply", () => {
       const PDiv = p("div");
@@ -30,7 +30,7 @@ describe("preact", () => {
       return { "data-testid": testId, ...rest };
     };
 
-    const p = polymorphic(transformer);
+    const p = polymorph(transformer);
 
     it("should render an element using proxy apply", () => {
       const PDiv = p("div");
@@ -50,7 +50,7 @@ describe("preact", () => {
   });
 
   describe("with refs", () => {
-    const p = polymorphic();
+    const p = polymorph();
 
     it("should forward refs using proxy apply", () => {
       const ref = createRef<HTMLDivElement>();

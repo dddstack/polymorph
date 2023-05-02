@@ -35,7 +35,7 @@ export const mechanic =
 
 export const defaultTransformer = (props: TransformerProps) => props;
 
-export const polymorphic = <TransformerPropsType extends TransformerProps>(
+export const polymorph = <TransformerPropsType extends TransformerProps>(
   transformer: Transformer<TransformerPropsType> = defaultTransformer
 ) => {
   const cache = new Map<As, any>();
