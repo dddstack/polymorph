@@ -4,5 +4,7 @@ export type Polymorph<
 > = {
   [AsType in As]: ComponentPropsType[AsType];
 } & {
-  <AsType extends As>(asType: AsType): ComponentPropsType[AsType];
+  <AsType extends As>(
+    asType: AsType
+  ): ComponentPropsType[AsType];
 };

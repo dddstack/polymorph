@@ -1,11 +1,11 @@
 import { render, screen } from "@solidjs/testing-library";
 import { splitProps } from "solid-js";
 
-import { polymorphic } from "../dist";
+import { polymorph } from "../dist";
 
 describe("solid", () => {
   describe("with default transformer", () => {
-    const p = polymorphic();
+    const p = polymorph();
 
     it("should render an element using proxy apply", () => {
       const PDiv = p("div");
@@ -30,7 +30,7 @@ describe("solid", () => {
       return { "data-testid": local.testId, ...others };
     };
 
-    const p = polymorphic(transformer);
+    const p = polymorph(transformer);
 
     it("should render an element using proxy apply", () => {
       const PDiv = p("div");
@@ -50,7 +50,7 @@ describe("solid", () => {
   });
 
   describe("with refs", () => {
-    const p = polymorphic();
+    const p = polymorph();
 
     it("should forward refs using proxy apply", () => {
       let ref: HTMLDivElement | undefined;
@@ -67,7 +67,9 @@ describe("solid", () => {
 
     it("should forward refs with the as prop", () => {
       let ref: (HTMLDivElement & HTMLSpanElement) | undefined;
-      render(() => <p.div as="span" ref={ref} data-testid="p" />);
+      render(() => (
+        <p.div as="span" ref={ref} data-testid="p" />
+      ));
       expect(ref).toBeInstanceOf(HTMLSpanElement);
     });
   });

@@ -1,10 +1,10 @@
 import { createDOM } from "@builder.io/qwik/testing";
 
-import { polymorphic } from "../dist";
+import { polymorph } from "../dist";
 
 describe("qwik", () => {
   describe("with default transformer", () => {
-    const p = polymorphic();
+    const p = polymorph();
 
     it("should render an element using proxy apply", async () => {
       const { render, screen } = await createDOM();
@@ -32,7 +32,7 @@ describe("qwik", () => {
       return { id: testId, ...rest };
     };
 
-    const p = polymorphic(transformer);
+    const p = polymorph(transformer);
 
     it("should render an element using proxy apply", async () => {
       const { render, screen } = await createDOM();
