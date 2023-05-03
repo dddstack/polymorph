@@ -1,5 +1,11 @@
 # @dddstack/polymorph-generics
 
+## 1.0.1
+
+### Patch Changes
+
+- bea3615: Update documentation
+
 ## 1.0.0
 
 ### Major Changes
