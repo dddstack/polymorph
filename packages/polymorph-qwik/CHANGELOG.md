@@ -1,5 +1,13 @@
 # @dddstack/polymorph-qwik
 
+## 1.0.1
+
+### Patch Changes
+
+- bea3615: Update documentation
+- Updated dependencies [bea3615]
+  - @dddstack/polymorph-generics@1.0.1
+
 ## 1.0.0
 
 ### Major Changes

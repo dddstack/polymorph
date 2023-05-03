@@ -1,6 +1,6 @@
 {
   "name": "@dddstack/polymorph-preact",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "@dddstack/polymorph-preact.",
   "keywords": [],
   "homepage": "https://github.com/dddstack/polymorph",
@@ -28,7 +28,7 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@dddstack/polymorph-generics": "1.0.0"
+    "@dddstack/polymorph-generics": "1.0.1"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.5.0",
