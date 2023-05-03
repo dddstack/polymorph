@@ -14,4 +14,4 @@ pnpm i @dddstack/polymorph-solid
 
 ## Documentation
 
-For comprehensive documentation, see [@dddstack/polymorph](https://github.com/dddstack/polymorph).
+For comprehensive documentation, view [polymorph.dddstack.com](https://polymorph.dddstack.com).

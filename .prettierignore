@@ -1,4 +1,4 @@
-pnpm-lock.yaml
 *.hbs
-dist
-.turbo
+.turbo/
+dist/
+pnpm-lock.yaml
