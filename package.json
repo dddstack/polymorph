@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "turbo run build --filter=./packages/*",
-    "build:watch": "turbo run build:watch --filter=./packages/*",
+    "build": "turbo run build",
+    "build:watch": "turbo run build:watch",
     "chore:changeset": "changeset",
     "chore:ddddurk": "ddddurk",
     "chore:droplet": "droplet",

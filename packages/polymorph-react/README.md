@@ -1,17 +1,7 @@
 # @dddstack/polymorph-react
 
-`polymorph-react`.
-
-## Installation
-
-```bash
-npm i @dddstack/polymorph-react
-# or
-yarn add @dddstack/polymorph-react
-# or
-pnpm i @dddstack/polymorph-react
-```
+@dddstack/polymorph-react
 
 ## Documentation
 
-For comprehensive documentation, view [polymorph.dddstack.com](https://polymorph.dddstack.com).
+For comprehensive documentation, view the [Polymorph documentation](https://github.com/dddstack/polymorph).
