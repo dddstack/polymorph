@@ -1,17 +1,7 @@
 # @dddstack/polymorph-qwik
 
-`polymorph-qwik`.
-
-## Installation
-
-```bash
-npm i @dddstack/polymorph-qwik
-# or
-yarn add @dddstack/polymorph-qwik
-# or
-pnpm i @dddstack/polymorph-qwik
-```
+@dddstack/polymorph-qwik
 
 ## Documentation
 
-For comprehensive documentation, view [polymorph.dddstack.com](https://polymorph.dddstack.com).
+For comprehensive documentation, view the [Polymorph documentation](https://github.com/dddstack/polymorph).

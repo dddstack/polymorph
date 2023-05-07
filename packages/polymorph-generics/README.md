@@ -1,17 +1,7 @@
 # @dddstack/polymorph-generics
 
-`polymorph-generics`.
-
-## Installation
-
-```bash
-npm i @dddstack/polymorph-generics
-# or
-yarn add @dddstack/polymorph-generics
-# or
-pnpm i @dddstack/polymorph-generics
-```
+@dddstack/polymorph-generics
 
 ## Documentation
 
-For comprehensive documentation, view [polymorph.dddstack.com](https://polymorph.dddstack.com).
+For comprehensive documentation, view the [Polymorph documentation](https://github.com/dddstack/polymorph).
