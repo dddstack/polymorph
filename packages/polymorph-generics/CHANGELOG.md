@@ -1,5 +1,11 @@
 # @dddstack/polymorph-generics
 
+## 1.0.2
+
+### Patch Changes
+
+- d9a218a: Update README.md
+
 ## 1.0.1
 
 ### Patch Changes

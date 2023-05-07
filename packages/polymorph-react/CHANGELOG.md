@@ -1,5 +1,13 @@
 # @dddstack/polymorph-react
 
+## 1.0.2
+
+### Patch Changes
+
+- d9a218a: Update README.md
+- Updated dependencies [d9a218a]
+  - @dddstack/polymorph-generics@1.0.2
+
 ## 1.0.1
 
 ### Patch Changes
