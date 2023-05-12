@@ -33,7 +33,7 @@
   "devDependencies": {
     "@builder.io/qwik": "^1.0.0",
     "@types/react": "^18.0.35",
-    "jsdom": "^21.1.1",
+    "jsdom": "^22.0.0",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4",
     "undici": "^5.21.2",
