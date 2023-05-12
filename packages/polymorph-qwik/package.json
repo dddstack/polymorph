@@ -31,7 +31,7 @@
     "@dddstack/polymorph-generics": "1.0.2"
   },
   "devDependencies": {
-    "@builder.io/qwik": "^0.107.0",
+    "@builder.io/qwik": "^1.0.0",
     "@types/react": "^18.0.35",
     "jsdom": "^21.1.1",
     "tsup": "^6.7.0",
@@ -40,7 +40,7 @@
     "vitest": "^0.30.0"
   },
   "peerDependencies": {
-    "@builder.io/qwik": "^0.x"
+    "@builder.io/qwik": "^0.x || ^1.0.0"
   },
   "publishConfig": {
     "access": "public"
