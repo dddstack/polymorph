@@ -1,5 +1,11 @@
 # @dddstack/polymorph-qwik
 
+## 1.0.3
+
+### Patch Changes
+
+- dafb578: Upgrade qwik 1.x
+
 ## 1.0.2
 
 ### Patch Changes
