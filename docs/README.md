@@ -90,10 +90,10 @@ Transformers act as a type-safe middleware between a component's function call a
 ```tsx
 import { polymorph } from "@dddstack/polymorph-react";
 
-const transformer = (props: { highlight?: string; }) => {
+const transformer = (props: { highlight?: string }) => {
   const { hightlight, ...rest } = props;
 
-  if (highlight) return { data-highlight: highlight, ...rest };
+  if (highlight) return { "data-highlight": highlight, ...rest };
 
   return rest;
 };
