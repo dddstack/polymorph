@@ -1,9 +1,13 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "esModuleInterop": true,
     "jsx": "react-jsx",
     "jsxImportSource": "@builder.io/qwik",
-    "lib": ["DOM"],
+    "lib": ["DOM", "ES2022"],
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "target": "ES6",
     "types": ["vitest/globals"]
   },
   "include": ["src", "tests"]
