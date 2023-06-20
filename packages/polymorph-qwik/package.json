@@ -25,7 +25,10 @@
     "build:watch": "tsup --watch",
     "test": "vitest run",
     "test:typecheck": "tsc --noEmit -p ./tsconfig.build.json",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "tsc": "tsc",
+    "tsup": "tsup",
+    "vitest": "vitest"
   },
   "dependencies": {
     "@dddstack/polymorph-generics": "1.0.2"
@@ -34,7 +37,7 @@
     "@builder.io/qwik": "^1.0.0",
     "@types/react": "^18.0.35",
     "jsdom": "^22.0.0",
-    "tsup": "^6.7.0",
+    "tsup": "^7.0.0",
     "typescript": "^5.0.4",
     "undici": "^5.21.2",
     "vitest": "^0.30.0"

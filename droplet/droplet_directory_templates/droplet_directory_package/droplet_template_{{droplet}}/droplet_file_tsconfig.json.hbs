@@ -1,6 +1,10 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "target": "ES6",
     "types": ["vitest/globals"]
   },
   "include": ["src", "tests"]

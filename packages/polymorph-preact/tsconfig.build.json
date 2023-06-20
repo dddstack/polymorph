@@ -1,8 +1,12 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "esModuleInterop": true,
     "jsx": "react-jsx",
-    "jsxImportSource": "preact"
+    "jsxImportSource": "preact",
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "target": "ES6"
   },
   "include": ["src"]
 }
