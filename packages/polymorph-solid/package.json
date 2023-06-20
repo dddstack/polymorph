@@ -1,6 +1,6 @@
 {
   "name": "@dddstack/polymorph-solid",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "@dddstack/polymorph-solid.",
   "keywords": [],
   "homepage": "https://github.com/dddstack/polymorph",
@@ -31,7 +31,7 @@
     "vitest": "vitest"
   },
   "dependencies": {
-    "@dddstack/polymorph-generics": "1.0.2"
+    "@dddstack/polymorph-generics": "1.0.3"
   },
   "devDependencies": {
     "@solidjs/testing-library": "^0.7.0",

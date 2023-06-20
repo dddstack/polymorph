@@ -84,7 +84,7 @@ importers:
   packages/polymorph-preact:
     dependencies:
       '@dddstack/polymorph-generics':
-        specifier: 1.0.2
+        specifier: 1.0.3
         version: link:../polymorph-generics
     devDependencies:
       '@preact/preset-vite':
@@ -115,7 +115,7 @@ importers:
   packages/polymorph-qwik:
     dependencies:
       '@dddstack/polymorph-generics':
-        specifier: 1.0.2
+        specifier: 1.0.3
         version: link:../polymorph-generics
     devDependencies:
       '@builder.io/qwik':
@@ -143,7 +143,7 @@ importers:
   packages/polymorph-react:
     dependencies:
       '@dddstack/polymorph-generics':
-        specifier: 1.0.2
+        specifier: 1.0.3
         version: link:../polymorph-generics
     devDependencies:
       '@testing-library/jest-dom':
@@ -183,7 +183,7 @@ importers:
   packages/polymorph-solid:
     dependencies:
       '@dddstack/polymorph-generics':
-        specifier: 1.0.2
+        specifier: 1.0.3
         version: link:../polymorph-generics
     devDependencies:
       '@solidjs/testing-library':
