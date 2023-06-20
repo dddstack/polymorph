@@ -1,5 +1,11 @@
 # @dddstack/polymorph-generics
 
+## 1.0.3
+
+### Patch Changes
+
+- 12d1f4c: Maintenance 06/20/23
+
 ## 1.0.2
 
 ### Patch Changes

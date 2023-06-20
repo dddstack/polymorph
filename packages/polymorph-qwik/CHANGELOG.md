@@ -1,5 +1,13 @@
 # @dddstack/polymorph-qwik
 
+## 1.0.4
+
+### Patch Changes
+
+- 12d1f4c: Maintenance 06/20/23
+- Updated dependencies [12d1f4c]
+  - @dddstack/polymorph-generics@1.0.3
+
 ## 1.0.3
 
 ### Patch Changes
